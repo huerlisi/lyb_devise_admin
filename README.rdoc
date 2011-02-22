@@ -1,3 +1,17 @@
 = LybDeviseAdmin
 
-This project rocks and uses MIT-LICENSE.
+LybDeviseAdmin provides a ready-to-use admin interface for device.
+
+= Install
+
+In Rails 3, simply add
+
+ gem 'lyb_devise_admin'
+
+to your Gemfile.
+
+= License
+
+Copyright (c) 2011 Simon Hürlimann <simon.huerlimann@cyt.ch>
+
+Released under the MIT license.
