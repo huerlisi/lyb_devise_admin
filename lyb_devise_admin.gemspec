@@ -2,7 +2,7 @@
 # project in your rails apps through git.
 Gem::Specification.new do |s|
   s.name = "lyb_devise_admin"
-  s.summary = "LybDeviseAdmin provides a ready-to-use admin interface for device."
+  s.summary = "LybDeviseAdmin provides a ready-to-use admin interface for devise."
   s.authors = ["Simon Hürlimann (CyT)"]
   s.email = ["simon.huerlimann@cyt.ch"]
   s.description = "LybDeviseAdmin ."
