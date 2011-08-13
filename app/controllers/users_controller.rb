@@ -2,6 +2,8 @@
 #
 # Provides a user/account management interface.
 class UsersController < AuthorizedController
+  helper :devise
+
   # Scopes
   has_scope :tagged_with
   

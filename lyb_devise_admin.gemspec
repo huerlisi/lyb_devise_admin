@@ -1,11 +1,19 @@
-# Provide a simple gemspec so you can easily use your enginex
-# project in your rails apps through git.
+# encoding: utf-8
+
+$:.unshift File.expand_path('../lib', __FILE__)
+require 'lyb_devise_admin/version'
+
 Gem::Specification.new do |s|
-  s.name = "lyb_devise_admin"
-  s.summary = "LybDeviseAdmin provides a ready-to-use admin interface for devise."
-  s.authors = ["Simon Hürlimann (CyT)"]
-  s.email = ["simon.huerlimann@cyt.ch"]
-  s.description = "LybDeviseAdmin ."
-  s.files = Dir["{app,lib,config}/**/*"] + ["MIT-LICENSE", "Rakefile", "Gemfile", "README.rdoc"]
-  s.version = "0.1.0"
+  s.name        = "lyb_devise_admin"
+  s.version     = LybDeviseAdmin::VERSION
+  s.authors     = ["Simon Hürlimann (CyT)"]
+  s.email       = ["simon.huerlimann@cyt.ch"]
+  s.homepage    = "https://github.com/huerlisi/has_accounts"
+  s.summary     = "Admin interface for device."
+  s.description = "LybDeviseAdmin provides a ready-to-use admin interface for devise."
+
+  s.files        = `git ls-files app lib config`.split("\n")
+  s.platform     = Gem::Platform::RUBY
+
+  s.extra_rdoc_files = ["README.rdoc"]
 end
