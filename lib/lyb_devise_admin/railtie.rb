@@ -3,8 +3,8 @@ require 'rails'
 
 module LybDeviseAdmin
   class Railtie < Rails::Engine
-    config.to_prepare do
-      ApplicationController.helper(DeviseHelper)
+    initializer 'lyb_devise_admin.helpers' do
+      ActionView::Base.send :include, DeviseHelper
     end
   end
 end
