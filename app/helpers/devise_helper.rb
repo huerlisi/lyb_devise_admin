@@ -1,3 +1,5 @@
+# encoding: utf-8
+
 module DeviseHelper
   # Prepare roles to show in select inputs etc.
   def roles_for_collection

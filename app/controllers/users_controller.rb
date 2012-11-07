@@ -1,3 +1,5 @@
+# encoding: utf-8
+
 # Users Controller
 #
 # Provides a user/account management interface.
