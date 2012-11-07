@@ -1,6 +1,7 @@
 de:
   activerecord:
     models:
+      user:                             Benutzer
     attributes:
       user:
         email:                          E-Mail
@@ -8,8 +9,14 @@ de:
         password_confirmation:          Passwort Bestätigung
         current_password:               Aktuelles Passwort  
         remember_me:                    Angemeldet bleiben  
+        last_sign_in_at:                Letzte Anmeldung
         created_at:                     Registriert seit
         roles:                          Rollen
         role_texts:                     Rollen
         locked:                         Gesperrt
         name:                           Name
+
+  crud:
+    flash:
+      locked:                           "Benutzer %{user} gesperrt."
+      unlocked:                         "Benutzer %{user} freigeschaltet."
