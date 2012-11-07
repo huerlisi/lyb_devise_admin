@@ -20,3 +20,8 @@ de:
     flash:
       locked:                           "Benutzer %{user} gesperrt."
       unlocked:                         "Benutzer %{user} freigeschaltet."
+
+  devise:
+    sign_in:  Anmelden
+    sign_out: Abmelden
+    profile:  Profil
