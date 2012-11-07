@@ -1,0 +1,12 @@
+%table.table
+  %thead
+    %tr
+      %th= t_attr :login
+      %th= t_attr :name
+      %th= t_attr :email
+      %th= t_attr :role_texts
+      %th= t_attr :last_sign_in_at if Devise.mappings[:user].trackable?
+      %th= t_attr :locked if Devise.mappings[:user].lockable?
+      %th.action-links
+  %tbody
+    = render @users

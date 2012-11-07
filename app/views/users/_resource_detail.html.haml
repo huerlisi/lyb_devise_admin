@@ -1,9 +1,0 @@
-%p= resource.to_s
-
-#user
-  %h2= t_attr(:roles)
-
-  %ul#roles
-  - resource.roles.each do |role|
-    %li
-      = role.to_s
