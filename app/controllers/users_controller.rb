@@ -35,7 +35,7 @@ class UsersController < AuthorizedController
   def lock
     @user = resource
 
-    @user.locke_access!
+    @user.lock_access!
 
     redirect_to users_path, :notice => t('crud.flash.locked', :user => @user.to_s)
   end
