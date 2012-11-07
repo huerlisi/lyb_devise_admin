@@ -6,16 +6,6 @@
 class UsersController < AuthorizedController
   helper :devise
 
-  # Scopes
-  has_scope :tagged_with
-  
-#  def create
-#    @user = User.new(params[:user])
-#    @user.person = Person.create(:type => params[:user]['role_texts'].first.to_s.camelcase) if params[:user]['role_texts'].first
-#
-#    create!{ users_path }
-#  end
-  
   # Actions
   def update
     @user = resource
@@ -40,6 +30,14 @@ class UsersController < AuthorizedController
     @user.unlock_access!
     
     redirect_to users_path, :notice => t('crud.flash.unlocked', :user => @user.to_s)
+  end
+
+  def lock
+    @user = resource
+
+    @user.locke_access!
+
+    redirect_to users_path, :notice => t('crud.flash.locked', :user => @user.to_s)
   end
 
   def current
