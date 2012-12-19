@@ -1,4 +1,5 @@
 = simple_form_for @user do |f|
+  = f.input :login if @user.respond_to? :login
   = f.input :email
   = f.input :password, :hint => !f.object.new_record?, :input_html => {:autocomplete => "off"}
   = f.input :password_confirmation
