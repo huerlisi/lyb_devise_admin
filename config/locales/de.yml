@@ -7,8 +7,8 @@ de:
         email:                          E-Mail
         password:                       Passwort
         password_confirmation:          Passwort Bestätigung
-        current_password:               Aktuelles Passwort  
-        remember_me:                    Angemeldet bleiben  
+        current_password:               Aktuelles Passwort
+        remember_me:                    Angemeldet bleiben
         last_sign_in_at:                Letzte Anmeldung
         created_at:                     Registriert seit
         roles:                          Rollen
@@ -20,6 +20,9 @@ de:
     flash:
       locked:                           "Benutzer %{user} gesperrt."
       unlocked:                         "Benutzer %{user} freigeschaltet."
+    action:
+      lock:                             Sperren
+      unlock:                           Entsperren
 
   devise:
     sign_in:  Anmelden
