@@ -1,7 +1,8 @@
 %tr
-  %td= link_to user.login, user, 'data-href-container' => 'tr'
+  -if user.respond_to? :login
+    %td= user.login
   %td= user.to_s
-  %td= user.email
+  %td= link_to user.email, user, 'data-href-container' => 'tr'
   %td= user.roles.join(', ')
   %td= user.last_sign_in_at if Devise.mappings[:user].trackable?
   %td= user.locked_at if Devise.mappings[:user].lockable?

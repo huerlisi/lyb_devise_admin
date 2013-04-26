@@ -1,7 +1,8 @@
 %table.table
   %thead
     %tr
-      %th= t_attr :login
+      - if User.new.respond_to? :login
+        %th= t_attr :login
       %th= t_attr :name
       %th= t_attr :email
       %th= t_attr :role_texts
