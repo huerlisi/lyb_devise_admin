@@ -8,7 +8,7 @@ Gem::Specification.new do |s|
   s.version     = LybDeviseAdmin::VERSION
   s.authors     = ["Simon Hürlimann (CyT)"]
   s.email       = ["simon.huerlimann@cyt.ch"]
-  s.homepage    = "https://github.com/huerlisi/has_accounts"
+  s.homepage    = "https://github.com/huerlisi/lyb_devise_admin"
   s.summary     = "Admin interface for device."
   s.description = "LybDeviseAdmin provides a ready-to-use admin interface for devise."
 
