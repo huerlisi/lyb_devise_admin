@@ -1,10 +1,10 @@
 = LybDeviseAdmin
 
-LybDeviseAdmin provides a ready-to-use admin interface for device.
+LybDeviseAdmin provides a ready-to-use admin interface for devise.
 
 = Install
 
-In Rails 3, simply add
+In Rails simply add
 
  gem 'lyb_devise_admin'
 
@@ -12,6 +12,6 @@ to your Gemfile.
 
 = License
 
-Copyright (c) 2011 Simon Hürlimann <simon.huerlimann@cyt.ch>
+Copyright (c) 2011-2015 Simon Hürlimann <simon.huerlimann@cyt.ch>
 
 Released under the MIT license.
