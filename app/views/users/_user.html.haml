@@ -8,7 +8,7 @@
   %td= user.locked_at if Devise.mappings[:user].lockable?
 
   %td.action-links
-    =link_to t_action(:edit), edit_resource_url(user)
-    =link_to t_action(:lock), lock_user_path(user), :method => :post if Devise.mappings[:user].lockable? && !user.locked_at?
-    =link_to t_action(:unlock), unlock_user_path(user), :method => :post if Devise.mappings[:user].lockable? && user.locked_at?
-    =link_to t_action(:delete), resource_url(user), :confirm => t_confirm_delete(user), :method => :delete
+    = list_link_to :edit, user
+    = list_link_to :lock, user, :method => :post if Devise.mappings[:user].lockable? && !user.locked_at?
+    = list_link_to :unlock, user, :method => :post if Devise.mappings[:user].lockable? && user.locked_at?
+    = list_link_to :delete, user, :confirm => t_confirm_delete(user), :method => :delete
