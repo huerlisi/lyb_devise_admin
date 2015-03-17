@@ -1,0 +1,12 @@
+0.4.0
+=====
+FEATURES
+* Use select2 for role selection in users/form.
+* Use list_link_to helper in user list partials.
+
+CLEANUPS
+* Fix homepage in gemspec.
+* Update README.
+* Upgrade nokogiri gem and dropped capybara to get bundle running on newer systems.
+* Version bump in Gemfile.lock.
+* Use https for rubygems source in Gemfile.
