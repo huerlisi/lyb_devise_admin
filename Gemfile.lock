@@ -4,7 +4,7 @@ PATH
     lyb_devise_admin (0.3.6)
 
 GEM
-  remote: http://rubygems.org/
+  remote: https://rubygems.org/
   specs:
     abstract (1.0.0)
     actionmailer (3.0.3)
