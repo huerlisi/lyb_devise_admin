@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    lyb_devise_admin (0.1.0)
+    lyb_devise_admin (0.3.6)
 
 GEM
   remote: http://rubygems.org/
